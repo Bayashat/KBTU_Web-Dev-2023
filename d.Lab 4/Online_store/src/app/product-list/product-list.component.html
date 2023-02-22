@@ -16,11 +16,11 @@
 
 	<p *ngIf="product.description">{{ product.description }}</p>
 
-	<button type="button" (click)="share_wtsp()">
+	<button type="button" (click)="share_wtsp(product.url)">
 		Share to WhatsApp
 	</button>
 
-	<button type="button" (click)="share_telegram()" class="btn_telegram">
+	<button type="button" (click)="share_telegram(product.url)" class="btn_telegram">
 		Share to Telegram
 	</button>
 

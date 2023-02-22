@@ -25,13 +25,16 @@ body {
 }
 
 .items {
+    padding: 20px;
     width: 1260px;
-    margin-left: 500px;
     margin-bottom: 50px;
+    border: 1px solid red;
 }
 
 img {
+    padding: 5px;
     margin-top: 20px;
+    border: 1px dashed purple;
 }
 
 .btn_telegram {

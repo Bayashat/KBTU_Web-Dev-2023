@@ -14,12 +14,12 @@ export class ProductListComponent {
 
 
 
-  share_wtsp() {
-    window.alert(window.open('https://web.whatsapp.com://send?text=This is whatsapp sharing example using button'));
+  share_wtsp(item_url:string) {
+    window.alert(window.open(`https://web.whatsapp.com://send?text=${item_url}`));
   }
 
-  share_telegram() {
-    window.alert(window.open('https://telegram.me/share/url?url=<URL>&text=<TEXT>'));
+  share_telegram(item_url:string) {
+    window.alert(window.open(`https://telegram.me/share/url?url=<${item_url}>&text=<TEXT>`));
   }
 
 }
