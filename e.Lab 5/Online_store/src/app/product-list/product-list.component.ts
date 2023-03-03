@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
-import { products } from '../products';
+import { Product } from '../products';
 
 
 @Component({
@@ -9,16 +9,10 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
+  @Input() category: Product[] = [];   // get the products from app component 
 
-  products = [...products];
-
-
-  share_wtsp(item_url:string) {
-    window.alert(window.open(`https://web.whatsapp.com://send?text=${item_url}`));
+  // remove product
+  onListRemove(product: Product){
+    this.category = this.category.filter((x:Product) => x != product)
   }
-
-  share_telegram(item_url:string) {
-    window.alert(window.open(`https://telegram.me/share/url?url=<${item_url}>&text=<TEXT>`));
-  }
-
 }

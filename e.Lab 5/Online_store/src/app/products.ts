@@ -149,7 +149,7 @@ export const products_cameras = [
 		description: 'Sony A7 IV',
 		rating: 10,
 		url: "https://kaspi.kz/shop/p/sony-a7-iv-body-103491027/?c=750000000#!/item",
-		image: "https://kaspi.kz/shop/p/sony-a7-iv-body-103491027/?c=750000000#!/item"
+		image: "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hde/h7e/48373562441758/sony-a7-iv-body-103491027-1.jpg"
 	},
 ];
 
