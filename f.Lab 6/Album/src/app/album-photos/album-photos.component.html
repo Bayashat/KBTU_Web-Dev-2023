@@ -1,1 +1,9 @@
-<p>album-photos works!</p>
+<div *ngIf="photos">
+    <p><button (click)="goBack()">Go Back</button></p>
+    <ul>
+        <li *ngFor="let photo of photos">
+            <img class="images" src="{{ photo.url }}" alt="" width="200">
+        </li>
+    </ul>
+    
+</div>
